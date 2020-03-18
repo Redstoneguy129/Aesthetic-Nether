@@ -1,0 +1,10 @@
+{ 
+        "homepage": "https://www.curseforge.com/minecraft/mc-mods/aesthetic-nether", 
+        "promos": { 
+                "1.14.4-latest": "0.1",
+                "1.14.4-recommended": "0.1"
+        }, 
+        "1.14.4": {
+                "0.1": "Added Thornvines"
+        }
+}
