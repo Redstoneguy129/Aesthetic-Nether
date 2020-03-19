@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "aesthetic-nether:block/bloodwood/bloodwood_top",
+    "side": "aesthetic-nether:block/bloodwood/bloodwood_bark"
+  }
+}

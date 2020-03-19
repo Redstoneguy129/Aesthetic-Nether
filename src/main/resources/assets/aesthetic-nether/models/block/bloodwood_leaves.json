@@ -1,0 +1,6 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "aesthetic-nether:block/bloodwood/bloodwood_leaves"
+  }
+}

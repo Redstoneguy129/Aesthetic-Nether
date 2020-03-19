@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "aesthetic-nether:block/bloodwood/bloodwood_sapling"
+  }
+}

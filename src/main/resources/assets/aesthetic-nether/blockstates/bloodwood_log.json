@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "aesthetic-nether:block/bloodwood_log" },
+    "axis=z":   { "model": "aesthetic-nether:block/bloodwood_log", "x": 90 },
+    "axis=x":   { "model": "aesthetic-nether:block/bloodwood_log", "x": 90, "y": 90 }
+  }
+}

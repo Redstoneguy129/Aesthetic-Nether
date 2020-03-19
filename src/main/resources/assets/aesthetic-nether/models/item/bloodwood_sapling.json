@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "aesthetic-nether:block/bloodwood/bloodwood_sapling"
+  }
+}

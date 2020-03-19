@@ -5,7 +5,7 @@ modId="aesthetic-nether"
 version="0.1"
 displayName="Aesthetic Nether"
 updateJSONURL="https://raw.githubusercontent.com/Redstoneguy129/Aesthetic-Nether/master/Version.json"
-authors=["Redstoneguy129", "EternalOne"]
+authors="Redstoneguy129, EternalOne"
 description='''
 Features from the Natura mod
 '''
