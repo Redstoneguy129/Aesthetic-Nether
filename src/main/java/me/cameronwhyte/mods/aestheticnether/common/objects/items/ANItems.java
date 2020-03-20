@@ -2,7 +2,6 @@ package me.cameronwhyte.mods.aestheticnether.common.objects.items;
 
 import me.cameronwhyte.mods.aestheticnether.AestheticNether;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 
 import java.util.ArrayList;
