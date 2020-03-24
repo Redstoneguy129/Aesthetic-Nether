@@ -18,7 +18,7 @@ archivesBaseName = modBaseName
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: 'stable', version: '58-1.14.4'
+    mappings channel: 'snapshot', version: '20191102-1.14.3'
     runs {
         client {
             workingDirectory project.file('run')

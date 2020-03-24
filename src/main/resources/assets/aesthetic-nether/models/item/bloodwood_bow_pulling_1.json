@@ -1,0 +1,6 @@
+{
+    "parent": "aesthetic-nether:item/bloodwood_bow",
+    "textures": {
+        "layer0": "aesthetic-nether:item/bow/bloodwood_bow_pulling_1"
+    }
+}

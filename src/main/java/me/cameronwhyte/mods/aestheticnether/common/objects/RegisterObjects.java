@@ -1,8 +1,10 @@
 package me.cameronwhyte.mods.aestheticnether.common.objects;
 
 import me.cameronwhyte.mods.aestheticnether.common.objects.blocks.ANBlocks;
+import me.cameronwhyte.mods.aestheticnether.common.objects.entities.ANEntities;
 import me.cameronwhyte.mods.aestheticnether.common.objects.items.ANItems;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -24,5 +26,13 @@ public class RegisterObjects {
             event.getRegistry().register(block);
         }
     }
+
+    @SubscribeEvent
+    public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event) {
+        for(EntityType<?> entity : ANEntities.ENTITIES) {
+            event.getRegistry().register(entity);
+        }
+    }
+
 
 }

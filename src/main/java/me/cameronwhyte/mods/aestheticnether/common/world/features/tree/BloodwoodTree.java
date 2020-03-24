@@ -1,4 +1,4 @@
-package me.cameronwhyte.mods.aestheticnether.common.objects.trees;
+package me.cameronwhyte.mods.aestheticnether.common.world.features.tree;
 
 import net.minecraft.block.trees.Tree;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
