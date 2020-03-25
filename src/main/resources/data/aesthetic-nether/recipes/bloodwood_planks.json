@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "aesthetic-nether:bloodwood_log"
+        }
+    ],
+    "result": {
+        "item": "aesthetic-nether:bloodwood_planks",
+        "count": 4
+    }
+}

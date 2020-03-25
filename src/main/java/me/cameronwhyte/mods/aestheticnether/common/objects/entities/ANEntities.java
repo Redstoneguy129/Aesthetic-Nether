@@ -12,6 +12,7 @@ public class ANEntities {
     public static List<EntityType<?>> ENTITIES = new ArrayList<EntityType<?>>();
 
     public static EntityType<?> HEATSCAR_SPIDER = register(EntityType.Builder.create(HeatscarSpider::new, EntityClassification.MONSTER).size(1.4F, 0.9F).immuneToFire().build(AestheticNether.MODID+":heatscar_spider").setRegistryName(AestheticNether.MODID, "heatscar_spider"));
+    public static EntityType<?> BABY_HEATSCAR_SPIDER = register(EntityType.Builder.create(BabyHeatscarSpider::new, EntityClassification.MONSTER).size(1.2F, 0.8F).immuneToFire().build(AestheticNether.MODID+":baby_heatscar_spider").setRegistryName(AestheticNether.MODID, "baby_heatscar_spider"));
 
     public static EntityType<?> register(EntityType<?> entity) {
         ENTITIES.add(entity);

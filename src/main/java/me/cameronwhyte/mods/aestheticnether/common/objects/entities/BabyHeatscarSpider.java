@@ -5,57 +5,38 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.entity.*;
-import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.monster.SpiderEntity;
-import net.minecraft.entity.monster.ZombieEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Effect;
-import net.minecraft.potion.EffectType;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvents;
-import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeHooks;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
-public class HeatscarSpider extends SpiderEntity {
+public class BabyHeatscarSpider extends SpiderEntity {
 
     //public static final ResourceLocation LOOT_TABLE = new ResourceLocation(AestheticNether.MODID, "loot_tables/entities/heatscarspider");
 
-    private HeatscarSpider(World world) {
-        super((EntityType<? extends SpiderEntity>) ANEntities.HEATSCAR_SPIDER, world);
+    private BabyHeatscarSpider(World world) {
+        super((EntityType<? extends SpiderEntity>) ANEntities.BABY_HEATSCAR_SPIDER, world);
     }
 
-    public HeatscarSpider(EntityType<? extends SpiderEntity> type, World world) {
-        super((EntityType<? extends SpiderEntity>) ANEntities.HEATSCAR_SPIDER, world);
-    }
-
-    @Override
-    protected void registerAttributes() {
-        super.registerAttributes();
-        this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(50.0D);
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(24D);
-        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.45000001788139344D);
-        this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(4.0D);
+    public BabyHeatscarSpider(EntityType<? extends SpiderEntity> type, World world) {
+        super((EntityType<? extends SpiderEntity>) ANEntities.BABY_HEATSCAR_SPIDER, world);
     }
 
     @Override
     protected float getStandingEyeHeight(Pose poseIn, EntitySize sizeIn) {
-        return 1.2F;
+        return 0.5F;
     }
 
-   // @Override
+    //@Override
     //protected ResourceLocation getLootTable()
     //{
-    //    return LOOT_TABLE;
+        //return LOOT_TABLE;
     //}
 
     @Override
@@ -150,20 +131,4 @@ public class HeatscarSpider extends SpiderEntity {
         }
     }
 
-    @Override
-    public void onDeath(DamageSource p_70645_1_) {
-        if(!this.world.isRemote) {
-            int num = 4 - 1 + 1;
-            int amount = this.rand.nextInt(num) + 1;
-            for (int i = 0; i < amount; i++) {
-                double f = this.rand.nextDouble() * 2;
-                double f1 = this.rand.nextDouble() * 2;
-                BabyHeatscarSpider babyspider = new BabyHeatscarSpider((EntityType<? extends SpiderEntity>) ANEntities.BABY_HEATSCAR_SPIDER, this.world);
-                babyspider.setPositionAndRotation(this.posX + f, this.posY + 0.5D, this.posZ + f1, this.rand.nextFloat() * 360.0F, 0.0F);
-                this.world.addEntity(babyspider);
-            }
-        }
-
-        super.onDeath(p_70645_1_);
-    }
 }

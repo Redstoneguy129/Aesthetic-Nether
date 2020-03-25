@@ -6,6 +6,7 @@ import me.cameronwhyte.mods.aestheticnether.common.objects.items.ANItems;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -33,6 +34,5 @@ public class RegisterObjects {
             event.getRegistry().register(entity);
         }
     }
-
 
 }

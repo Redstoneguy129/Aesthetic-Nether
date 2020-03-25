@@ -1,5 +1,6 @@
 package me.cameronwhyte.mods.aestheticnether;
 
+import me.cameronwhyte.mods.aestheticnether.common.objects.RegisterRenders;
 import me.cameronwhyte.mods.aestheticnether.common.objects.types.ANFeatures;
 import me.cameronwhyte.mods.aestheticnether.common.objects.types.ANPlacements;
 import net.minecraft.world.biome.Biome;
@@ -35,7 +36,7 @@ public class AestheticNether {
                 GenerationStage.Decoration.UNDERGROUND_DECORATION,
                 Biome.createDecoratedFeature(ANFeatures.BLOODWOODTREE,
                         IFeatureConfig.NO_FEATURE_CONFIG,
-                        Placement.COUNT_RANGE, new CountRangeConfig(30, 0, 0, 128))
+                        Placement.COUNT_RANGE, new CountRangeConfig(15, 0, 0, 128))
         );
         Biomes.NETHER.addFeature(
                 GenerationStage.Decoration.UNDERGROUND_DECORATION,
@@ -48,6 +49,7 @@ public class AestheticNether {
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
+        RegisterRenders.registerEntityRenders();
         LOGGER.info(MODID+": client is setup!");
     }
 

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " /S",
+        "/ S",
+        " /S"
+    ],
+    "key": {
+        "/": {
+            "item": "aesthetic-nether:bloodwood_stick"
+        },
+        "S": {
+            "item": "aesthetic-nether:flame_string"
+        }
+    },
+    "result": {
+        "item": "aesthetic-nether:bloodwood_bow",
+        "count": 1
+    }
+}
