@@ -2,7 +2,7 @@ modLoader="javafml"
 loaderVersion="[28,)"
 [[mods]]
 modId="aesthetic-nether"
-version="0.1"
+version="0.2"
 displayName="Aesthetic Nether"
 updateJSONURL="https://raw.githubusercontent.com/Redstoneguy129/Aesthetic-Nether/master/Version.json"
 authors="Redstoneguy129, EternalOne"
