@@ -1,6 +1,5 @@
 package me.cameronwhyte.mods.aestheticnether.common.objects.entities;
 
-import me.cameronwhyte.mods.aestheticnether.AestheticNether;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
@@ -8,7 +7,6 @@ import net.minecraft.entity.*;
 import net.minecraft.entity.monster.SpiderEntity;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -18,26 +16,18 @@ import net.minecraftforge.common.ForgeHooks;
 
 public class BabyHeatscarSpider extends SpiderEntity {
 
-    //public static final ResourceLocation LOOT_TABLE = new ResourceLocation(AestheticNether.MODID, "loot_tables/entities/heatscarspider");
-
     private BabyHeatscarSpider(World world) {
-        super((EntityType<? extends SpiderEntity>) ANEntities.BABY_HEATSCAR_SPIDER, world);
+        super(ANEntities.BABY_HEATSCAR_SPIDER, world);
     }
 
     public BabyHeatscarSpider(EntityType<? extends SpiderEntity> type, World world) {
-        super((EntityType<? extends SpiderEntity>) ANEntities.BABY_HEATSCAR_SPIDER, world);
+        super(ANEntities.BABY_HEATSCAR_SPIDER, world);
     }
 
     @Override
     protected float getStandingEyeHeight(Pose poseIn, EntitySize sizeIn) {
         return 0.5F;
     }
-
-    //@Override
-    //protected ResourceLocation getLootTable()
-    //{
-        //return LOOT_TABLE;
-    //}
 
     @Override
     public void jump()

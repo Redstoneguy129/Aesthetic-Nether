@@ -2,7 +2,6 @@ package me.cameronwhyte.mods.aestheticnether.common.objects.items;
 
 import me.cameronwhyte.mods.aestheticnether.AestheticNether;
 import me.cameronwhyte.mods.aestheticnether.common.objects.entities.ANEntities;
-import net.minecraft.entity.EntityType;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

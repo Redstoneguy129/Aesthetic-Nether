@@ -1,21 +1,16 @@
 package me.cameronwhyte.mods.aestheticnether.common.world.features.tree;
 
-import com.google.common.collect.Lists;
 import com.mojang.datafixers.Dynamic;
 import me.cameronwhyte.mods.aestheticnether.common.objects.blocks.ANBlocks;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.LogBlock;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 
-import java.util.List;
-import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
 import java.util.function.Function;

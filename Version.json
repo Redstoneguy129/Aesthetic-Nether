@@ -1,11 +1,12 @@
 { 
         "homepage": "https://www.curseforge.com/minecraft/mc-mods/aesthetic-nether", 
         "promos": { 
-                "1.14.4-latest": "0.2",
-                "1.14.4-recommended": "0.2"
+                "1.14.4-latest": "0.3",
+                "1.14.4-recommended": "0.3"
         }, 
         "1.14.4": {
-                "0.1": "Finshed Port",
-				"0.2": "Fixed English Language File"
+                "0.1": "Finished Port",
+				"0.2": "Fixed English Language File",
+                "0.3": "Fixed Heatscar Spider Spawning"
         }
 }

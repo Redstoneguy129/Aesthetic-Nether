@@ -1,41 +1,27 @@
 package me.cameronwhyte.mods.aestheticnether.common.objects.entities;
 
-import me.cameronwhyte.mods.aestheticnether.AestheticNether;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.entity.*;
-import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.monster.SpiderEntity;
-import net.minecraft.entity.monster.ZombieEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Effect;
-import net.minecraft.potion.EffectType;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvents;
-import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeHooks;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-
 public class HeatscarSpider extends SpiderEntity {
 
-    //public static final ResourceLocation LOOT_TABLE = new ResourceLocation(AestheticNether.MODID, "loot_tables/entities/heatscarspider");
-
     private HeatscarSpider(World world) {
-        super((EntityType<? extends SpiderEntity>) ANEntities.HEATSCAR_SPIDER, world);
+        super(ANEntities.HEATSCAR_SPIDER, world);
     }
 
     public HeatscarSpider(EntityType<? extends SpiderEntity> type, World world) {
-        super((EntityType<? extends SpiderEntity>) ANEntities.HEATSCAR_SPIDER, world);
+        super(ANEntities.HEATSCAR_SPIDER, world);
     }
 
     @Override
@@ -51,12 +37,6 @@ public class HeatscarSpider extends SpiderEntity {
     protected float getStandingEyeHeight(Pose poseIn, EntitySize sizeIn) {
         return 1.2F;
     }
-
-   // @Override
-    //protected ResourceLocation getLootTable()
-    //{
-    //    return LOOT_TABLE;
-    //}
 
     @Override
     public void jump()

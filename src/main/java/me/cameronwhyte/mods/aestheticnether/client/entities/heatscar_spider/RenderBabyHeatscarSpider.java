@@ -2,7 +2,6 @@ package me.cameronwhyte.mods.aestheticnether.client.entities.heatscar_spider;
 
 import me.cameronwhyte.mods.aestheticnether.AestheticNether;
 import me.cameronwhyte.mods.aestheticnether.common.objects.entities.BabyHeatscarSpider;
-import me.cameronwhyte.mods.aestheticnether.common.objects.entities.HeatscarSpider;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.SpiderRenderer;
